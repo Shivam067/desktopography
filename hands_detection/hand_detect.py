@@ -16,7 +16,7 @@ def recognise(img,dep):
                     pos_x = int(lm.x*480)
                     pos_y = int(lm.y*640)
                     finger_dep[int(id/4 - 1)] = dep[pos_x][pos_y]
-                    # TODO cv2.circle(dep,(int(lm.x*640),int(lm.y*480)),5,(0,0,255),5)             
+                               
                     finger_xy[int(id/4 -1)] = (pos_x,pos_y)
         return finger_xy,finger_dep
     else:
